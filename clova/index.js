@@ -111,7 +111,7 @@ class CEKRequest {
         // }
       }
       cekResponse.appendSpeechText(moneyCount)
-      cekResponse.appendSpeechText(`이체 해 드릴께요.`)ㅎ
+      cekResponse.appendSpeechText(`이체 해 드릴께요.`)
       break
     case 'Clova.GuideIntent':
     default:
