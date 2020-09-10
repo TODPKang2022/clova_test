@@ -99,6 +99,20 @@ class CEKRequest {
     case '영우야':
       cekResponse.appendSpeechText(`전 오늘 간단히 먹고 쉬겠습니다.`)
       break
+    case '이체':
+      if (!!slots) {
+        const moneySlot = slots.money
+        if (slots.length != 0 && moneySlot) {
+          moneyCount = parseInt(moneySlot.value)
+        }
+
+        // if (isNaN(diceCount)) {
+        //   diceCount = 1
+        // }
+      }
+      cekResponse.appendSpeechText(moneySlot)
+      cekResponse.appendSpeechText(`이체 해 드릴께요.`)
+      break
     case 'Clova.GuideIntent':
     default:
       cekResponse.setSimpleSpeechText("계좌 조회해줘, 라고 시도해보세요.")
