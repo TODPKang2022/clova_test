@@ -95,9 +95,10 @@ class CEKRequest {
       // })
       // const throwResult = throwDice(diceCount)
       // cekResponse.appendSpeechText(resultText(throwResult))
-      // break
+      break
     case '영우야':
       cekResponse.appendSpeechText(`전 오늘 간단히 먹고 쉬겠습니다.`)
+      break
     case 'Clova.GuideIntent':
     default:
       cekResponse.setSimpleSpeechText("계좌 조회해줘, 라고 시도해보세요.")
