@@ -102,15 +102,15 @@ class CEKRequest {
     case '이체':
       if (!!slots) {
         const moneySlot = slots.money
-        if (slots.length != 0 && moneySlot) {
-          moneyCount = parseInt(moneySlot.value)
-        }
+        // if (slots.length != 0 && moneySlot) {
+        //   moneyCount = parseInt(moneySlot.value)
+        // }
 
         // if (isNaN(diceCount)) {
         //   diceCount = 1
         // }
       }
-      cekResponse.appendSpeechText(moneyCount)
+      cekResponse.appendSpeechText(moneySlot.value)
       cekResponse.appendSpeechText(`이체 해 드릴께요.`)
       break
     case 'Clova.GuideIntent':
