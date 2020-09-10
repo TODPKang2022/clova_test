@@ -110,8 +110,8 @@ class CEKRequest {
         //   diceCount = 1
         // }
       }
-      cekResponse.appendSpeechText(moneySlot)
-      cekResponse.appendSpeechText(`이체 해 드릴께요.`)
+      cekResponse.appendSpeechText(moneyCount)
+      cekResponse.appendSpeechText(`이체 해 드릴께요.`)ㅎ
       break
     case 'Clova.GuideIntent':
     default:
