@@ -100,6 +100,7 @@ class CEKRequest {
       cekResponse.appendSpeechText(`전 오늘 간단히 먹고 쉬겠습니다.`)
       break
     case '이체':
+      let moneySlot = slots.money
       if (!!slots) {
         const moneySlot = slots.money
         // if (slots.length != 0 && moneySlot) {
@@ -110,8 +111,9 @@ class CEKRequest {
         //   diceCount = 1
         // }
       }
-      cekResponse.appendSpeechText(moneySlot.value)
-      cekResponse.appendSpeechText(`이체 해 드릴께요.`)
+      console.log(moneySlot.value)
+      // cekResponse.appendSpeechText()
+      cekResponse.appendSpeechText(`${moneySlot.value} 이체 해 드릴께요.`)
       break
     case 'Clova.GuideIntent':
     default:
