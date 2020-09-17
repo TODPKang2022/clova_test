@@ -96,7 +96,7 @@ class CEKRequest {
       // const throwResult = throwDice(diceCount)
       // cekResponse.appendSpeechText(resultText(throwResult))
       const cardResult = {
-        "subType": "Type2",
+        "subType": "Type1",
         "type": "CardList",
         "cardList": [{
             "contentProviderText": {
