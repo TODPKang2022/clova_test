@@ -114,6 +114,123 @@ class CEKRequest {
       console.log(moneySlot.value)
       // cekResponse.appendSpeechText()
       cekResponse.appendSpeechText(`${moneySlot.value} 이체 해 드릴께요.`)
+      cekResponse.card({
+        "cardList": [
+          {
+            "contentProviderText" : {
+              "type" : "string",
+              "value" : "뮤직"
+            },
+            "description": [
+              {
+                "type": "string",
+                "value": "07:25"
+              },
+              {
+                "type": "string",
+                "value": ""
+              },
+              {
+                "type": "string",
+                "value": ""
+              }
+            ],
+            "imageUrl": {
+              "type": "url",
+              "value": "https://tvcast1.phinf.contentservice.example.net/20180105_40/rYaFz_1515134168871cxwhn_JPEG/1515134043644.jpg"
+            },
+            "linkUrl": {
+              "type": "url",
+              "value": ""
+            },
+            "press": {
+              "type": "string",
+              "value": ""
+            },
+            "publishDate": {
+              "type": "date",
+              "value": ""
+            },
+            "referenceText": {
+              "type": "string",
+              "value": "검색결과"
+            },
+            "referenceUrl": {
+              "type": "url",
+              "value": "https://m.search.contentservice.example.com/search?where=m&sm=mob_lic&query=asmr+%ec%b0%be%ea%b8%b0"
+            },
+            "title": {
+              "type": "string",
+              "value": "[<mark>ASMR</mark>] 커피 한잔하실래요?"
+            },
+            "videoUrl": {
+              "type": "url",
+              "value": "https://m.tv.contentservice.example.com/v/2509121"
+            }
+          },
+          {
+            "contentProviderText" : {
+              "type" : "string",
+              "value" : "뮤직"
+            },
+            "description": [
+              {
+                "type": "string",
+                "value": "05:05"
+              },
+              {
+                "type": "string",
+                "value": ""
+              },
+              {
+                "type": "string",
+                "value": ""
+              }
+            ],
+            "imageUrl": {
+              "type": "url",
+              "value": "https://tvcast2.phinf.contentservice.example.net/20180104_140/7QzKq_15150467287668gEkL_JPEG/1515046724731.jpg"
+            },
+            "linkUrl": {
+              "type": "url",
+              "value": ""
+            },
+            "press": {
+              "type": "string",
+              "value": ""
+            },
+            "publishDate": {
+              "type": "date",
+              "value": ""
+            },
+            "referenceText": {
+              "type": "string",
+              "value": "검색결과"
+            },
+            "referenceUrl": {
+              "type": "url",
+              "value": "https://m.search.contentservice.example.com/search?where=m&sm=mob_lic&query=asmr+%ec%b0%be%ea%b8%b0"
+            },
+            "title": {
+              "type": "string",
+              "value": "[<mark>ASMR</mark>] 물 끓는 소리 영상"
+            },
+            "videoUrl": {
+              "type": "url",
+              "value": "https://m.tv.contentservice.example.com/v/2503662"
+            }
+          }
+        ],
+        "meta": {
+          "version": {
+            "type": "string",
+            "value": "v0.1"
+          }
+        },
+        "subType": "",
+        "type": "CardList"
+      }
+      )
       break
     case 'Clova.GuideIntent':
     default:
