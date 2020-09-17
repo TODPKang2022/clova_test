@@ -87,7 +87,7 @@ class CEKRequest {
       //     diceCount = 1
       //   }
       // }
-      cekResponse.appendSpeechText(`싫어요.`)
+      cekResponse.appendSpeechText(`강동호 고객님 입출금 계좌 조회해드릴께요.`)
       // cekResponse.appendSpeechText({
       //   lang: 'ko',
       //   type: 'URL',
@@ -95,142 +95,128 @@ class CEKRequest {
       // })
       // const throwResult = throwDice(diceCount)
       // cekResponse.appendSpeechText(resultText(throwResult))
+      const cardResult = {
+        "subType": "",
+        "type": "CardList",
+        "cardList": [{
+            "contentProviderText": {
+              "type": "string",
+              "value": "입출금 계좌"
+            },
+            "description": [{
+                "type": "string",
+                "value": "신한 주거래 우대통장(저축예금)"
+              },
+              {
+                "type": "string",
+                "value": "110-432-123443"
+              },
+              {
+                "type": "string",
+                "value": "121,000원"
+              }
+            ],
+            "imageUrl": {
+              "type": "url",
+              "value": "https://movie.phinf.contentservice.example.net/20170410_12/1491786049305s4W0n_JPEG/movie_image.jpg?type=w640_2"
+            },
+            "linkUrl": {
+              "type": "url",
+              "value": "https://movie.contentservice.example.com/movie/bi/mi/basic.nhn?code=118965"
+            },
+            "press": {
+              "type": "string",
+              "value": ""
+            },
+            "publishDate": {
+              "type": "date",
+              "value": ""
+            },
+            "referenceText": {
+              "type": "string",
+              "value": "예금금리"
+            },
+            "referenceUrl": {
+              "type": "url",
+              "value": "https://m.search.contentservice.example.com/search?where=m&sm=mob_lic&query=+%ec%98%81%ed%99%94"
+            },
+            "title": {
+              "type": "string",
+              "value": "입출금"
+            },
+            "videoUrl": {
+              "type": "url",
+              "value": ""
+            }
+          },
+          {
+            "contentProviderText": {
+              "type": "string",
+              "value": "펀드"
+            },
+            "description": [{
+                "type": "string",
+                "value": "신한 미래설계 연금저축계좌(연금전용)"
+              },
+              {
+                "type": "string",
+                "value": "250-145-223454"
+              },
+              {
+                "type": "string",
+                "value": "140,222원"
+              }
+            ],
+            "imageUrl": {
+              "type": "url",
+              "value": "https://movie.phinf.contentservice.example.net/20170317_53/1489741954272MquSW_JPEG/movie_image.jpg?type=w640_2"
+            },
+            "linkUrl": {
+              "type": "url",
+              "value": "https://movie.contentservice.example.com/movie/bi/mi/basic.nhn?code=137909"
+            },
+            "press": {
+              "type": "string",
+              "value": ""
+            },
+            "publishDate": {
+              "type": "date",
+              "value": ""
+            },
+            "referenceText": {
+              "type": "string",
+              "value": "수익률"
+            },
+            "referenceUrl": {
+              "type": "url",
+              "value": "https://m.search.contentservice.example.com/search?where=m&sm=mob_lic&query=+%ec%98%81%ed%99%94"
+            },
+            "title": {
+              "type": "string",
+              "value": "펀드"
+            },
+            "videoUrl": {
+              "type": "url",
+              "value": ""
+            }
+          }
+        ]
+      };
+      cekResponse.setCard(cardResult)
       break
     case '영우야':
       cekResponse.appendSpeechText(`전 오늘 간단히 먹고 쉬겠습니다.`)
       break
     case '이체':
-      let moneySlot = slots.money
-      if (!!slots) {
-        const moneySlot = slots.money
-        // if (slots.length != 0 && moneySlot) {
-        //   moneyCount = parseInt(moneySlot.value)
-        // }
-
-        // if (isNaN(diceCount)) {
-        //   diceCount = 1
-        // }
-      }
-      console.log(moneySlot.value)
-      cekResponse.appendSpeechText()
+      cekResponse.appendSpeechText(`싫어요.`)
+      // let moneySlot = slots.money
+      // if (!!slots) {
+      //   const moneySlot = slots.money
+      // }
+      // console.log(moneySlot.value)
+      // cekResponse.appendSpeechText()
       // cekResponse.appendSpeechText(`${moneySlot.value} 이체 해 드릴께요.`)
-      const cardResult = {
-        "cardList": [
-          {
-            "contentProviderText" : {
-              "type" : "string",
-              "value" : "뮤직"
-            },
-            "description": [
-              {
-                "type": "string",
-                "value": "07:25"
-              },
-              {
-                "type": "string",
-                "value": ""
-              },
-              {
-                "type": "string",
-                "value": ""
-              }
-            ],
-            "imageUrl": {
-              "type": "url",
-              "value": "https://tvcast1.phinf.contentservice.example.net/20180105_40/rYaFz_1515134168871cxwhn_JPEG/1515134043644.jpg"
-            },
-            "linkUrl": {
-              "type": "url",
-              "value": ""
-            },
-            "press": {
-              "type": "string",
-              "value": ""
-            },
-            "publishDate": {
-              "type": "date",
-              "value": ""
-            },
-            "referenceText": {
-              "type": "string",
-              "value": "검색결과"
-            },
-            "referenceUrl": {
-              "type": "url",
-              "value": "https://m.search.contentservice.example.com/search?where=m&sm=mob_lic&query=asmr+%ec%b0%be%ea%b8%b0"
-            },
-            "title": {
-              "type": "string",
-              "value": "[<mark>ASMR</mark>] 커피 한잔하실래요?"
-            },
-            "videoUrl": {
-              "type": "url",
-              "value": "https://m.tv.contentservice.example.com/v/2509121"
-            }
-          },
-          {
-            "contentProviderText" : {
-              "type" : "string",
-              "value" : "뮤직"
-            },
-            "description": [
-              {
-                "type": "string",
-                "value": "05:05"
-              },
-              {
-                "type": "string",
-                "value": ""
-              },
-              {
-                "type": "string",
-                "value": ""
-              }
-            ],
-            "imageUrl": {
-              "type": "url",
-              "value": "https://tvcast2.phinf.contentservice.example.net/20180104_140/7QzKq_15150467287668gEkL_JPEG/1515046724731.jpg"
-            },
-            "linkUrl": {
-              "type": "url",
-              "value": ""
-            },
-            "press": {
-              "type": "string",
-              "value": ""
-            },
-            "publishDate": {
-              "type": "date",
-              "value": ""
-            },
-            "referenceText": {
-              "type": "string",
-              "value": "검색결과"
-            },
-            "referenceUrl": {
-              "type": "url",
-              "value": "https://m.search.contentservice.example.com/search?where=m&sm=mob_lic&query=asmr+%ec%b0%be%ea%b8%b0"
-            },
-            "title": {
-              "type": "string",
-              "value": "[<mark>ASMR</mark>] 물 끓는 소리 영상"
-            },
-            "videoUrl": {
-              "type": "url",
-              "value": "https://m.tv.contentservice.example.com/v/2503662"
-            }
-          }
-        ],
-        "meta": {
-          "version": {
-            "type": "string",
-            "value": "v0.1"
-          }
-        },
-        "subType": "",
-        "type": "CardList"
-      };
-      cekResponse.setCard(cardResult)
+      
       break
     case 'Clova.GuideIntent':
     default:
