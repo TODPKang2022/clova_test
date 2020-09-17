@@ -118,7 +118,7 @@ class CEKRequest {
             ],
             "imageUrl": {
               "type": "url",
-              "value": "https://clova-test.s3.ap-northeast-2.amazonaws.com/01.png"
+              "value": "https://clova-test.s3.ap-northeast-2.amazonaws.com/03.png"
             },
             "linkUrl": {
               "type": "url",
@@ -169,7 +169,7 @@ class CEKRequest {
             ],
             "imageUrl": {
               "type": "url",
-              "value": "https://clova-test.s3.ap-northeast-2.amazonaws.com/02.png"
+              "value": "https://clova-test.s3.ap-northeast-2.amazonaws.com/04.png"
             },
             "linkUrl": {
               "type": "url",
