@@ -87,7 +87,7 @@ class CEKRequest {
       //     diceCount = 1
       //   }
       // }
-      cekResponse.appendSpeechText(`강동호 고객님 입출금 계좌 조회해드릴께요.`)
+      cekResponse.appendSpeechText(`고객님 입출금 계좌 조회해드릴께요.`)
       // cekResponse.appendSpeechText({
       //   lang: 'ko',
       //   type: 'URL',
@@ -118,11 +118,11 @@ class CEKRequest {
             ],
             "imageUrl": {
               "type": "url",
-              "value": "https://movie.phinf.contentservice.example.net/20170410_12/1491786049305s4W0n_JPEG/movie_image.jpg?type=w640_2"
+              "value": "https://clova-test.s3.ap-northeast-2.amazonaws.com/01.png"
             },
             "linkUrl": {
               "type": "url",
-              "value": "https://movie.contentservice.example.com/movie/bi/mi/basic.nhn?code=118965"
+              "value": ""
             },
             "press": {
               "type": "string",
@@ -138,7 +138,7 @@ class CEKRequest {
             },
             "referenceUrl": {
               "type": "url",
-              "value": "https://m.search.contentservice.example.com/search?where=m&sm=mob_lic&query=+%ec%98%81%ed%99%94"
+              "value": ""
             },
             "title": {
               "type": "string",
@@ -169,11 +169,11 @@ class CEKRequest {
             ],
             "imageUrl": {
               "type": "url",
-              "value": "https://movie.phinf.contentservice.example.net/20170317_53/1489741954272MquSW_JPEG/movie_image.jpg?type=w640_2"
+              "value": "https://clova-test.s3.ap-northeast-2.amazonaws.com/02.png"
             },
             "linkUrl": {
               "type": "url",
-              "value": "https://movie.contentservice.example.com/movie/bi/mi/basic.nhn?code=137909"
+              "value": ""
             },
             "press": {
               "type": "string",
@@ -189,7 +189,7 @@ class CEKRequest {
             },
             "referenceUrl": {
               "type": "url",
-              "value": "https://m.search.contentservice.example.com/search?where=m&sm=mob_lic&query=+%ec%98%81%ed%99%94"
+              "value": ""
             },
             "title": {
               "type": "string",
