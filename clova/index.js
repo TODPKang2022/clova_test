@@ -112,9 +112,9 @@ class CEKRequest {
         // }
       }
       console.log(moneySlot.value)
-      // cekResponse.appendSpeechText()
-      cekResponse.appendSpeechText(`${moneySlot.value} 이체 해 드릴께요.`)
-      cekResponse.card({
+      cekResponse.appendSpeechText()
+      // cekResponse.appendSpeechText(`${moneySlot.value} 이체 해 드릴께요.`)
+      const cardResult = {
         "cardList": [
           {
             "contentProviderText" : {
@@ -229,8 +229,8 @@ class CEKRequest {
         },
         "subType": "",
         "type": "CardList"
-      }
-      )
+      };
+      cekResponse.setCard(cardResult)
       break
     case 'Clova.GuideIntent':
     default:
@@ -281,6 +281,10 @@ class CEKResponse {
           value: outputText,
       },
     }
+  }
+
+  setCard(outputCard) {
+    this.response.card = outputCard
   }
 
   appendSpeechText(outputText) {
